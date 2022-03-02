@@ -23,7 +23,7 @@ DCDME can be executed as standalone script with the following parameters:
 Name  |  Type | Description | Default 
 -------------  | ------------- |------------- | -------------
 allpath | string| It cotains the file path of Dynamic networks | './data/my_LFR/files.txt'
-path_score|string| | The scores of DCDME algorithm on each dynamic network| 'result_score_LFR.xlsx'
+path_score|string|The scores of DCDME algorithm on each dynamic network| 'result_score_LFR.xlsx'
 l | integer |number of snapshot | len(edgefilelist)
 
 #Input
