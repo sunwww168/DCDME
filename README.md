@@ -28,19 +28,19 @@ l | integer |number of snapshot | len(edgefilelist)
 
 #Input
 The dynamic networks. We use batch processing, and all dynamic network file path names are placed in the 'files.txt' file. E.g:
-birthdeath_u0.1_b0.1_d0.1
-birthdeath_u0.2_b0.1_d0.1
-birthdeath_u0.3_b0.1_d0.1
-birthdeath_u0.4_b0.1_d0.1
-birthdeath_u0.5_b0.1_d0.1
-birthdeath_u0.6_b0.1_d0.1
-birthdeath_u0.7_b0.1_d0.1
-birthdeath_u0.8_b0.1_d0.1
-switch_u0.1_p0.1k5
-switch_u0.1_p0.1k10
-switch_u0.1_p0.1k15
-switch_u0.1_p0.1k20
-switch_u0.1_p0.1k25
+birthdeath_u0.1_b0.1_d0.1<br>
+birthdeath_u0.2_b0.1_d0.1<br>
+birthdeath_u0.3_b0.1_d0.1<br>
+birthdeath_u0.4_b0.1_d0.1<br>
+birthdeath_u0.5_b0.1_d0.1<br>
+birthdeath_u0.6_b0.1_d0.1<br>
+birthdeath_u0.7_b0.1_d0.1<br>
+birthdeath_u0.8_b0.1_d0.1<br>
+switch_u0.1_p0.1k5<br>
+switch_u0.1_p0.1k10<br>
+switch_u0.1_p0.1k15<br>
+switch_u0.1_p0.1k20<br>
+switch_u0.1_p0.1k25<br>
 
 # Output
 The scores of DCDME algorithm on each dynamic network, which are written to the 'result_score_LFR.xlsx' file. Community information can be obtained from object 'comm_va'.
@@ -48,7 +48,11 @@ The scores of DCDME algorithm on each dynamic network, which are written to the 
 Instructions for using DCDME code:
 
 1.Install networkx and scikit-learn python libraries before running the script.
+
 2.Place the script inside the dataset folder. The folder should have edge files and community files corresponding to the number of snapshots. 
+
 3.The dateset directory should contain the 'files.txt' file, which contains the directory to execute.
+
 4.Two files, 'edgeslist.txt' and 'commlist.txt', should be included in each directory to be executed, which respectively contain the information of each dynamic network and the corresponding groundtruth community.
+
 5.Run the script like any ususal python script after following steps 1-4.
